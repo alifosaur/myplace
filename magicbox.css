@@ -1,0 +1,143 @@
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Welcome Container */
+.welcome-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Title */
+.welcome-title {
+  font-size: 26px;
+  color: #e48fb7;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* GIF */
+.dancing-girl {
+  width: 230px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Cute Message */
+.welcome-msg {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Wish Box Container */
+.wish-box-container {
+  margin-top: 25px;
+}
+
+.box-question {
+  font-size: 16px;
+  color: #e48fb7;
+  margin-bottom: 12px;
+}
+
+/* Button */
+.box-button {
+  background-color: #e48fb7;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 10px rgba(228, 143, 183, 0.25);
+}
+
+.box-button:hover {
+  background-color: #d26a9a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 14px rgba(210, 106, 154, 0.35);
+}
+
+/* Hidden Wish Text */
+#wish-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #fff5f9;
+  border: 2px dashed #e48fb7;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  color: #333;
+  display: none;
+}
+
+#wish-box.show {
+  display: block;
+}
+
+/* Decorative Flowers */
+.flower-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flower {
+  font-size: 22px;
+  animation: floaty 2s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.flower-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.flower {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  animation: fall 4s linear infinite;
+  opacity: 0.8;
+}
+
+/* Create random positions + delay using nth-child */
+.flower:nth-child(1) { left: 10%; animation-delay: 0s; }
+.flower:nth-child(2) { left: 50%; animation-delay: 1s; }
+.flower:nth-child(3) { left: 80%; animation-delay: 2s; }
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+

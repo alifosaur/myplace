@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ALFI'S CORNER </title>
+  <link rel="stylesheet" href="index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container1">
+    <h2>🗝️ Enter The Sweet Words </h2>
+    <p>This is a protected space don't login if you are not related to this cute lil girl</p>
+    <input type="password" id="passwordInput" placeholder="Enter the Password" />
+    <button onclick="checkPassword()">Enter</button>
+    <div class="error" id="errorMsg"></div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      const correct = "ihateyou"; // Your chosen password
+      if (password === correct) {
+        window.location.href = "magicbox.html";
+      } else {
+        document.getElementById("errorMsg").innerText = "You scammer get the hell out of here";
+      }
+    }
+  </script>
+</body>
+</html>

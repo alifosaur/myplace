@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALFI'S CORNER'</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #2f2f2f, #5a4a59, #84707f);
+      color: #f0d9e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+      color: #f3c5d5;
+    }
+
+    p {
+      font-size: 13px;
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 15px;
+      border: none;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      outline: none;
+    }
+
+    textarea::placeholder,
+    input::placeholder {
+      color: #d8b5c6;
+    }
+
+    button {
+      background-color: #b876a6;
+      color: white;
+      padding: 12px 28px;
+      font-size: 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a25992;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Wanna leave something behind?</h2>
+    <p>Say it here!! maybe aap nervous honge, excited honge ya fir anxious honge ik so if you feel like sharing go ahead, take it out!!</p>
+    <p>or itna mast best of luck dekh kr khush hue to Thank you hi bol dein aur haan ye bhi ki I'm cute, obviously I'm isme bolne wali konsi baat hai </p>
+
+    <form action="https://formsubmit.co/urushhalif@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your nickname (optional)">
+      <textarea name="message" rows="6" placeholder="Type your message... " required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <button type="submit">Send it</button>
+    </form>
+  </div>
+
+</body>
+</html>

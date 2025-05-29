@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALFI'S CORNER</title>
+  <link rel="stylesheet" href="letter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+  <h2>It's quite dark in here na ?</h2>
+  <p>Let's just Switch on the light to read what I've written for yaa~ </p>
+  <button class="switch-btn" onclick="switchLight()">Switch On The Light</button>
+
+  <div class="letter-box" id="letterBox">
+    <h3>Dear Dr. Ganju</h3>
+    <p>I just want to say… you're doing so well. And I'm proud of you. You matter, a lot. Your exam is on your head and ik you worked really hard for it, so don't worry Mr. koala you're gonna make it, Wishing you a very best of luck!!</p>
+    <div class="final-message">
+  <p>There’s more... that’s not it 👀<br>
+     Aur naa toh option mein hi nahi hai toh aage jaake meri aur bakwaas sunni padegi vrna me goli maardoongi~<br>
+     <strong>So you HAVE to click YES!!</strong>
+  </p>
+      <div class="yes-buttons">
+      <button onclick="window.location.href='snowpage.html'">Yes</button>
+<button onclick="window.location.href='snowpage.html'">Yes</button>
+  </div>
+</div>
+  </div>
+
+  <script>
+    function switchLight() {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+      document.getElementById("letterBox").style.display = "block";
+    }
+  </script>
+</body>
+</html>

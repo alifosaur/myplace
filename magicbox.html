@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALFI'S CORNER</title>
+  <link rel="stylesheet" href="magicbox.css">
+</head>
+<body>
+  <div class="welcome-container">
+    <h1 class="welcome-title">Welcome-Welcome, I was waiting for yaa 🔪 </h1>
+
+    <img src="cat.gif" alt="Dancing Girl" class="dancing-girl" />
+
+    <p class="welcome-msg">It’s raining, Don't worry I won't kill you~ </p>
+    <div class="wish-box-container">
+  <p class="box-question">I have a lil wish for you !! But first Say AABRA KA DAABRA GILI GILI CHUUU~</p>
+      <button class="box-button" onclick="window.location.href='letter.html'">OPEN</button>
+</div>
+    <div id="wish-box" class="hidden-box">
+      <p class="wish-text">You're doing amazing. This world needs more of your smile, your weirdness, and your wild dreams 💌</p>
+    </div>
+  </div>
+
+  <div class="flower-container">
+    <div class="flower">🔪</div>
+    <div class="flower">🔪</div>
+    <div class="flower">🔪</div>
+  </div>
+
+  <script>
+    function openBox() {
+      document.getElementById("wish-box").classList.remove("hidden-box");
+    }
+  </script>
+</body>
+</html>

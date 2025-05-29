@@ -1,0 +1,102 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 40px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+}
+
+/* DARK MODE (Before light is turned on) */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+/* LIGHT MODE (After switch) */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Heading */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Light Switch Button */
+.switch-btn {
+  background-color: #e48fb7;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch-btn:hover {
+  background-color: #d26a9a;
+}
+
+/* Letter Box (Initially Hidden) */
+.letter-box {
+  display: none;
+  background-color: #ffeaf4;
+  border: 2px dashed #e48fb7;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Letter Text */
+.letter-box h3 {
+  font-size: 24px;
+  color: #d26a9a;
+  margin-bottom: 10px;
+}
+
+.letter-box p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Final Message Box */
+.final-message {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #d26a9a;
+}
+
+.yes-buttons {
+  margin-top: 15px;
+}
+
+.yes-buttons button {
+  background-color: #e48fb7;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.yes-buttons button:hover {
+  background-color: #d26a9a;
+}

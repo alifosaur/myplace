@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.voice-message {
+  position: relative;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 2s ease-in-out;
+  height: 370px;
+  width: 300px;
+}
+
+
+.voice-message h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+audio {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  width: 250px;
+}
+
+.emoji-snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.emoji {
+  position: absolute;
+  top: -2rem;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+.pinky-message {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.pinky-message p {
+  font-size: 14px;
+  color: #ffcfe7;
+  margin-bottom: 12px;
+}
+
+.continue-button {
+  display: inline-block;
+  background-color: #ff85b3;
+  color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 133, 179, 0.4);
+}
+
+.continue-button:hover {
+  background-color: #ff66a3;
+}

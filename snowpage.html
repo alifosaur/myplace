@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALFI'S CORNER</title>
+  <link rel="stylesheet" href="snowpage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Falling Emojis Container -->
+  <div class="emoji-snow"></div>
+
+  <!-- Voice Message Section -->
+  <div class="voice-message">
+    <h2>Meri pyari si awaaz me aapke liye wish</h2>
+    <audio controls>
+      <source src="your-voice.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="pinky-message">
+  <p>Pinky wala promise – iske baad last page h!!</p>
+  <a href="lastpage.html" class="continue-button">Continue →</a>
+</div>
+  </div>
+
+  <!-- Falling Emoji Script -->
+  <script>
+    const emojiContainer = document.querySelector('.emoji-snow');
+
+    for (let i = 0; i < 30; i++) {
+      const emoji = document.createElement('div');
+      emoji.classList.add('emoji');
+      emoji.textContent = '❄️';
+      emoji.style.left = `${Math.random() * 100}vw`;
+      emoji.style.animationDuration = `${6 + Math.random() * 4}s`;
+      emoji.style.fontSize = `${20 + Math.random() * 15}px`;
+      emoji.style.opacity = 0.8;
+      emojiContainer.appendChild(emoji);
+    }
+  </script>
+
+</body>
+</html>
